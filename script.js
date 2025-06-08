@@ -9,7 +9,7 @@ const c1 = document.getElementById("column1")
 lis.forEach((li) => {
     li.addEventListener("click", function() {
         for (var i=0; i < all.length; i++) {
-            if (li.innerHTML == all[i].className || li.innerHTML == "All") {
+            if (li.id == all[i].className || li.id == "All") {
                 all[i].style.display = "flex";
             } else {
                 all[i].style.display = "none";
